@@ -1,0 +1,56 @@
+body{
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav{
+    height: 3em;
+    background: #ED4264;
+    background: -webkit-linear-gradient(to right, #FFEDBC, #ED4264);
+    background: linear-gradient(to right, #FFEDBC, #ED4264);
+    color: #fff;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+.left{
+    float: left;
+    position: absolute;
+    left: 2em;
+    top: 1em;
+}
+
+.right{
+    float: right;
+    position: absolute;
+    right: 2em;
+    top: 2em;
+}
+
+h1{
+    font-family: 'Pacifico';
+    font-size: 2vw;
+    margin: 0;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1em;
+}
+
+input{
+    border: none;
+}
+
+button{
+    background-color: #fff;
+    color: #fc112d;
+    border: none;
+    margin-left: 1em;
+}
