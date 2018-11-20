@@ -1,35 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>To-do list</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Pacifico|Questrial&amp;subset=latin-ext" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="./script.js"></script>
-    </head>
-    <body>
-        <div class="nav">
-            <div class="left">
-                <a href="index.html"><h1>TODO</h1></a>
-            </div>
-            <div class="right">
-                <form>
-                 
-                        <label for="uname"><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="uname" required>
-                    
 
-                   
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                    
-                    <button type="submit">Login</button>
-                </form>
+<head>
+    <title>To-do list</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Pacifico|Questrial&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./script.js"></script>
+    <script src="./login.js"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="left">
+            <a href="index.html">
+                <h1>TODO</h1>
+            </a>
+        </div>
+        <div class="right">
+            <div>
+                <label for="uname"><b>Username</b></label>
+                <input id="loginUsername" type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input id="loginPassword" type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" onclick="loginToThePage()">Login</button>
+                <button class="register-button" onclick="document.getElementById('id01').style.display='block'">Register</button>
             </div>
         </div>
-        <div id="main">
-            <p>Please log in to be able to use your Todo List!</p>
+    </div>
+    <div id="main">
+        <p>Please log in to be able to use your Todo List!</p>
+    </div>
+
+    <div id="id01" class="modal">
+            <form class="modal-content animate register-form">
+
+                <div class="register-container">
+                    <label for="uname" class="login-labels"><b>Username</b></label>
+                    <input id="registerUsername" type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw" class="login-labels"><b>Password</b></label>
+                    <input id="registerPassword" type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button class="blue-register-button" onclick="registerUser()">Register</button>
+
+                    <div>
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancel-btn">Cancel</button>
+                    </div>
+                </div>
+
+                <button id="register-button" onclick="registerUser()">Register</button>
+            </form>
         </div>
-    </body>
+</body>
+
 </html>

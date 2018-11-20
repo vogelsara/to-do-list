@@ -73,7 +73,16 @@ button{
     font-family: 'Pacifico';
     font-size: 4vw;
     color: #ED4264;
-    margin-top: 6em;
+    margin-top: 3em;
+}
+
+#register-button{
+    color: #ED4264;
+}
+
+.cancel-btn{
+    background-color: #ED4264;
+    color: #fff; 
 }
 
 
