@@ -5,6 +5,7 @@ body{
 a{
     text-decoration: none;
     color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav{
@@ -33,6 +34,10 @@ a{
     top: 2em;
 }
 
+#login-link, #logout-link{
+    margin-left: 1em;
+}
+
 h1{
     font-family: 'Pacifico';
     font-size: 2vw;
@@ -42,17 +47,31 @@ h1{
 label{
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 1em;
+    font-size: 2vw;
 }
 
 input{
     border: none;
     background-color: #fff !important;
     padding: 0.5em;
+    font-size: 2vw;
 }
 
 button{
-    background-color: #fff;
-    color: #fc112d;
-    border: none;
-    margin-left: 1em;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 1em;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+}
+
+#main p{
+    font-family: 'Pacifico';
+    font-size: 4vw;
+    color: #ED4264;
+    margin-top: 6em;
 }
